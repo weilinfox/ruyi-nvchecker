@@ -1,0 +1,16 @@
+[__config__]
+oldver = "../logs/ruyi_oldver.json"
+newver = "../logs/ruyi.json"
+
+[ruyi]
+source = "github"
+github = "ruyisdk/ruyi"
+use_latest_release = true
+include_prereleases = false
+
+[ruyi-release]
+source = "regex"
+url = "https://mirror.iscas.ac.cn/ruyisdk/ruyi/releases/"
+regex = 'href="([0-9]+\.[0-9]+\.[0-9]+)/"'
+encoding = "utf-8"
+
